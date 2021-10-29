@@ -2,6 +2,12 @@ module.exports = {
   purge: ['./**/*.html'],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    extend: {
+      colors: {
+        bgGray: '#F5F5F5',
+        bgBlueTxt: '#004A7A',
+      }
+    },
     screens: {
       'sm': '640px',
       // => @media (min-width: 640px) { ... }
@@ -17,9 +23,13 @@ module.exports = {
 
       '2xl': '1536px',
       // => @media (min-width: 1536px) { ... }
-      }
-      
     },
+    fontFamily: {
+      Ubuntu: ['Ubuntu']
+    },
+
+  },
+
   variants: {
     extend: {},
     display: ['responsive', 'group-hover', 'group-focus'],

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homepage</title>
+  <link rel="stylesheet" href="tailwind.css">
+</head>
+
+<body class="font-Ubuntu">
+  <!-- Header -->
+  <div class="grid grid-cols-2 px-4 py-4 shadow-md md:px-24 bg-bgGray">
+    <div class="inline-block">
+      <svg class="my-auto" height="42" viewBox="0 0 250 49" fill="none" xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink">
+        <rect width="250" height="49" fill="url(#pattern0)" />
+        <defs>
+          <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+            <use xlink:href="#image0_1:3" transform="scale(0.004 0.0204082)" />
+          </pattern>
+          <image id="image0_1:3" height="42"
+            xlink:href="data:image/png;base64,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" />
+        </defs>
+      </svg>
+    </div>
+    <div class="flex hidden my-auto md:block md:justify-end ">
+      <ul class="justify-end my-auto font-medium cursor-pointer md:flex text-bgBlueTxt">
+        <li class="px-5 my-auto" href="">Reviews</li>
+        <li class="px-5 my-auto" href="">Resources</li>
+        <li class="px-5 my-auto" href="">About Us</li>
+        <input
+          class="flex justify-end inline-block px-2 py-2 my-auto text-sm bg-white border-gray-300 rounded-md shadow-sm focus:outline-none w-72"
+          placeholder="Search">
+      </ul>
+    </div>
+    <div class="flex justify-end block my-auto md:hidden">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd"
+          d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+          clip-rule="evenodd" />
+      </svg>
+    </div>
+  </div>
+
+  <!--Heading-->
+  <div class="mx-4 md:mx-24">
+    <div class="grid grid-cols-2 mt-12 border-2 rounded-sm shadow-md bg-bgGray border-bgGray">
+      <div class="py-20">
+        <h1 class="px-12 text-5xl">We Compare Products, Services And Software</h1>
+        <p class="px-12 mt-4 leading-loose">Looking for some advice on buying things online? We HERE have reviews and
+          comparisons on
+          products and
+          services in the
+          following niches</p>
+      </div>
+    </div>
+  </div>
+
+  <!--Small 12 Boxses-->
+  <div class="mx-4 mt-12 md:mx-24">
+    <div class="grid grid-cols-12 gap-4">
+      <div class="col-span-2 py-8 border-2 shadow-md border-bgGray">
+        <svg class="mx-auto" width="45" height="37" viewBox="0 0 45 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M40.893 35.5465C38.9189 36.5336 36.2868 35.8755 34.9707 33.9014L31.3516 29.2952H13.5848L9.96564 33.9014C8.32057 36.2045 5.35944 36.5336 3.05634 34.8885C1.41127 33.5724 0.753239 31.5983 1.08225 29.9533L3.38535 17.7797C4.04338 13.8316 7.66254 10.8704 11.6107 10.8704H20.8231V5.93522C20.8231 3.3031 22.7972 1 25.4293 1H35.6288C36.6158 1 37.2738 1.65803 37.2738 2.64507C37.2738 3.63212 36.6158 4.29014 35.6288 4.29014H25.7583C24.7713 4.29014 24.1133 4.94817 24.1133 5.6062V10.8704H33.3257C37.2738 10.8704 40.893 13.8316 41.551 17.7797L43.8541 29.9533C44.1831 32.2564 43.1961 34.5595 40.893 35.5465ZM17.533 19.0958C17.533 16.4637 15.2299 14.1606 12.5978 14.1606C9.96564 14.1606 7.66254 16.4637 7.66254 19.0958C7.66254 21.7279 9.96564 24.031 12.5978 24.031C15.2299 24.031 17.533 21.7279 17.533 19.0958ZM37.2738 19.0958C37.2738 18.1088 36.6158 17.4507 35.6288 17.4507H33.9837V15.8057C33.9837 14.8186 33.3257 14.1606 32.3386 14.1606C31.3516 14.1606 30.6936 14.8186 30.6936 15.8057V17.4507H29.0485C28.0614 17.4507 27.4034 18.1088 27.4034 19.0958C27.4034 20.0828 28.0614 20.7409 29.0485 20.7409H30.6936V22.3859C30.6936 23.373 31.3516 24.031 32.3386 24.031C33.3257 24.031 33.9837 23.373 33.9837 22.3859V20.7409H35.6288C36.6158 20.7409 37.2738 20.0828 37.2738 19.0958Z"
+            stroke="#B51A23" stroke-width="2" />
+        </svg>
+        <p class="mt-2 text-sm text-center">Technology & Gaming</p>
+      </div>
+      <div class="col-span-2 py-8 border-2 shadow-md border-bgGray">
+        <svg class="mx-auto" width="45" height="37" viewBox="0 0 45 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M40.893 35.5465C38.9189 36.5336 36.2868 35.8755 34.9707 33.9014L31.3516 29.2952H13.5848L9.96564 33.9014C8.32057 36.2045 5.35944 36.5336 3.05634 34.8885C1.41127 33.5724 0.753239 31.5983 1.08225 29.9533L3.38535 17.7797C4.04338 13.8316 7.66254 10.8704 11.6107 10.8704H20.8231V5.93522C20.8231 3.3031 22.7972 1 25.4293 1H35.6288C36.6158 1 37.2738 1.65803 37.2738 2.64507C37.2738 3.63212 36.6158 4.29014 35.6288 4.29014H25.7583C24.7713 4.29014 24.1133 4.94817 24.1133 5.6062V10.8704H33.3257C37.2738 10.8704 40.893 13.8316 41.551 17.7797L43.8541 29.9533C44.1831 32.2564 43.1961 34.5595 40.893 35.5465ZM17.533 19.0958C17.533 16.4637 15.2299 14.1606 12.5978 14.1606C9.96564 14.1606 7.66254 16.4637 7.66254 19.0958C7.66254 21.7279 9.96564 24.031 12.5978 24.031C15.2299 24.031 17.533 21.7279 17.533 19.0958ZM37.2738 19.0958C37.2738 18.1088 36.6158 17.4507 35.6288 17.4507H33.9837V15.8057C33.9837 14.8186 33.3257 14.1606 32.3386 14.1606C31.3516 14.1606 30.6936 14.8186 30.6936 15.8057V17.4507H29.0485C28.0614 17.4507 27.4034 18.1088 27.4034 19.0958C27.4034 20.0828 28.0614 20.7409 29.0485 20.7409H30.6936V22.3859C30.6936 23.373 31.3516 24.031 32.3386 24.031C33.3257 24.031 33.9837 23.373 33.9837 22.3859V20.7409H35.6288C36.6158 20.7409 37.2738 20.0828 37.2738 19.0958Z"
+            stroke="#B51A23" stroke-width="2" />
+        </svg>
+        <p class="mt-2 text-sm text-center">Technology & Gaming</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
