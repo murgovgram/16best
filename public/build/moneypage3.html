@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moneypage 3</title>
+  <link rel="stylesheet" href="tailwind.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="font-Ubuntu">
+  <!-- Header -->
+  <div class="grid grid-cols-2 px-4 py-4 shadow-md md:px-24 bg-bgGray">
+    <div class="inline-block">
+      <svg class="my-auto" height="42" viewBox="0 0 250 49" fill="none" xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink">
+        <rect width="250" height="49" fill="url(#pattern0)" />
+        <defs>
+          <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+            <use xlink:href="#image0_1:3" transform="scale(0.004 0.0204082)" />
+          </pattern>
+          <image id="image0_1:3" height="42"
+            xlink:href="data:image/png;base64,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" />
+        </defs>
+      </svg>
+    </div>
+    <div class="flex hidden my-auto md:block md:justify-end ">
+      <ul class="justify-end my-auto font-medium cursor-pointer md:flex text-bgBlueTxt">
+        <li class="px-5 my-auto" href="">Reviews</li>
+        <li class="px-5 my-auto" href="">Resources</li>
+        <li class="px-5 my-auto" href="">About Us</li>
+        <input
+          class="flex justify-end inline-block px-2 py-2 my-auto text-sm bg-white border-gray-300 rounded-md shadow-sm focus:outline-none w-72"
+          placeholder="Search">
+      </ul>
+    </div>
+    <div class="flex justify-end block my-auto md:hidden">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd"
+          d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+          clip-rule="evenodd" />
+      </svg>
+    </div>
+  </div>
+
+  <!--Links-->
+  <div class="px-4 py-4 md:px-28">
+    <p class="text-sm font-thin">Home / Money Page</p>
+  </div>
+
+  <!--Heading-->
+  <div class="py-12 border-t-4 border-b-4 border-bgRed bg-bgGray">
+    <h1 class="text-5xl font-bold text-center text-bgBlueTxt">Money Page 3</h1>
+  </div>
+
+  <div class="mx-4 mt-12 md:mx-56">
+    <p class="font-thin leading-loose">Luctus sed ac fames elementum tellus libero bibendum. Feugiat purus in a viverra
+      mattis
+      nibh eget morbi non. Diam
+      volutpat ipsum orci, lectus at enim. Scelerisque quam purus, eu ut. At convallis sed nec ac, proin non ac tempor.
+      Laoreet vel, purus eu nibh facilisis risus, in varius. Placerat nibh velit natoque elementum arcu sit cursus.
+      Faucibus
+      semper aenean diam turpis at sit eget sodales. Gravida viverra arcu non, a eget orci. Imperdiet faucibus dolor non
+      habitant quisque. Ornare proin phasellus odio ac mauris nunc morbi placerat. Sit consectetur at lacinia magna
+      tincidunt.
+      Aliquam praesent in eu mauris. Consectetur donec facilisis proin scelerisque pharetra nibh sed. Proin leo sit eu
+      lectus
+      vel pharetra dui, pretium. Id sed sem id proin pretium, nec. Commodo posuere mauris, lacus, egestas felis eu amet,
+      pretium facilisis. Egestas consectetur posuere rutrum sem sit volutpat id non egestas. Nunc, nulla aenean arcu
+      rutrum
+      mattis. Vitae facilisis lectus bibendum nisi, volutpat. Tristique vitae iaculis auctor a nam pellentesque et
+      consequat,
+      natoque. Auctor amet semper tellus lacus semper quis adipiscing mauris. Consequat ipsum, natoque aliquet commodo
+      ornare.
+      Congue et ipsum sit mus egestas vel lacus enim, morbi. Sagittis nec commodo ac sit tellus.</p>
+  </div>
+
+  <!--Product-->
+  <div class="mx-4 mt-12 md:mx-56">
+    <h1 class="py-4 text-xl font-black border-b-2 border-gray-100 md:text-3xl text-bgBlueTxt">Comparisons Of Top
+      Products And Services</h1>
+    <img class="mt-6" src="images/product.png" alt="">
+    <div class="grid grid-cols-4 mt-6 border-b-2 border-gray-200">
+      <div class="col-span-3">
+        <p>Best <span class="text-bgRed">Overall</span></p>
+        <h1 class="py-2 text-4xl font-bold text-bgRed">Helix Luxe Mattress</h1>
+        <ul class="py-3 border-t-2 border-gray-200">
+          <li class="py-1 font-bold">Price Range: <span class="font-light">$1,099 - $2,349</span></li>
+          <li class="py-1 font-bold">Mattress Type: <span class="font-light">$1,099 - $2,349</span></li>
+          <li class="py-1 font-bold">Firmness: <span class="font-light">Soft (3), Medium Soft (4), Medium Firm
+              (6)</span></li>
+          <li class="py-1 font-bold">Trial length: <span class="font-light">100 nights (30-night requirement)</span>
+          </li>
+          <li class="py-1 font-bold">Warranty:<span class="font-light">15 Year, Limited</span></li>
+          <li class="py-1 font-bold">Sizes:<span class="font-light">Twin, Twin XL, Full, Queen, King</span></li>
+        </ul>
+      </div>
+      <div class="hidden py-3 md:block">
+        <img class="border-b-4 border-l-4 h-52 border-bgBlueTxt" src="images/apron.png" alt="">
+        <div class="flex justify-center inline-block mx-auto my-auto mt-2 mb-6 text-2xl md:mb-0 text-bgRed">
+          <span class="mx-2 fa fa-star"></span>
+          <span class="mx-2 fa fa-star"></span>
+          <span class="mx-2 fa fa-star"></span>
+          <span class="mx-2 fa fa-star"></span>
+          <span class="mx-2 fa fa-star"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Pros-->
+  <div class="mx-4 mt-8 md:mx-56">
+    <div class="grid p-6 border border-gray-200 md:grid-cols-2 bg-bgGray">
+      <div class="">
+        <h1 class="py-2 text-xl font-bold text-bgBlueTxt">Who it's best for:</h1>
+        <ul>
+          <li class="py-2"><svg class="inline-block" width="23" height="23" viewBox="0 0 23 23" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M11.5 0C5.14874 0 0 5.14874 0 11.5C0 17.8513 5.14874 23 11.5 23C17.8512 23 23 17.8513 23 11.5C23 5.14874 17.8512 0 11.5 0ZM11.5 2.49878C16.4712 2.49878 20.4998 6.53001 20.4998 11.5C20.4998 16.47 16.4712 20.4998 11.5 20.4998C6.52874 20.4998 2.50018 16.47 2.50018 11.5C2.5002 6.53001 6.52874 2.49878 11.5 2.49878ZM15.9066 6.03919L9.24127 12.7059L7.0794 10.544L4.95824 12.6638L7.12011 14.8256L9.2553 16.9608L11.3751 14.8397L18.0417 8.17437L15.9066 6.03919Z"
+                fill="#B51A23" />
+            </svg>
+            <span class="inline-block">Who are unsure what firmness is best for them</span>
+          </li>
+          <li class="py-2"><svg class="inline-block" width="23" height="23" viewBox="0 0 23 23" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M11.5 0C5.14874 0 0 5.14874 0 11.5C0 17.8513 5.14874 23 11.5 23C17.8512 23 23 17.8513 23 11.5C23 5.14874 17.8512 0 11.5 0ZM11.5 2.49878C16.4712 2.49878 20.4998 6.53001 20.4998 11.5C20.4998 16.47 16.4712 20.4998 11.5 20.4998C6.52874 20.4998 2.50018 16.47 2.50018 11.5C2.5002 6.53001 6.52874 2.49878 11.5 2.49878ZM15.9066 6.03919L9.24127 12.7059L7.0794 10.544L4.95824 12.6638L7.12011 14.8256L9.2553 16.9608L11.3751 14.8397L18.0417 8.17437L15.9066 6.03919Z"
+                fill="#B51A23" />
+            </svg>
+            <span class="inline-block">Sleepers of all sizes and sleeping positions</span>
+          </li>
+          <li class="py-2"><svg class="inline-block" width="23" height="23" viewBox="0 0 23 23" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M11.5 0C5.14874 0 0 5.14874 0 11.5C0 17.8513 5.14874 23 11.5 23C17.8512 23 23 17.8513 23 11.5C23 5.14874 17.8512 0 11.5 0ZM11.5 2.49878C16.4712 2.49878 20.4998 6.53001 20.4998 11.5C20.4998 16.47 16.4712 20.4998 11.5 20.4998C6.52874 20.4998 2.50018 16.47 2.50018 11.5C2.5002 6.53001 6.52874 2.49878 11.5 2.49878ZM15.9066 6.03919L9.24127 12.7059L7.0794 10.544L4.95824 12.6638L7.12011 14.8256L9.2553 16.9608L11.3751 14.8397L18.0417 8.17437L15.9066 6.03919Z"
+                fill="#B51A23" />
+            </svg>
+            <span class="inline-block">Those who tend to sleep hot</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="">
+        <h1 class="py-2 text-xl font-bold text-bgBlueTxt">Highlights:</h1>
+        <ul>
+          <li class="py-2">
+            <svg class="inline-block" width="23" height="24" viewBox="0 0 23 24" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M22.0364 12.3523C22.5148 11.7201 22.7796 10.9456 22.7796 10.1398C22.7796 8.86128 22.0649 7.65111 20.9145 6.97627C20.6184 6.80256 20.2812 6.71114 19.9378 6.71146H13.1097L13.2805 3.21194C13.3204 2.36625 13.0214 1.56327 12.4405 0.951069C12.1554 0.649319 11.8115 0.409236 11.43 0.245657C11.0485 0.0820773 10.6374 -0.00152342 10.2223 2.10146e-05C8.74166 2.10146e-05 7.43184 0.996628 7.03889 2.4232L4.59293 11.2788H0.911183C0.407185 11.2788 0 11.6859 0 12.1899V22.5547C0 23.0587 0.407185 23.4658 0.911183 23.4658H18.0329C18.2949 23.4658 18.5511 23.4146 18.7875 23.3121C20.1428 22.734 21.017 21.41 21.017 19.9407C21.017 19.5819 20.9658 19.2288 20.8633 18.8871C21.3416 18.255 21.6064 17.4805 21.6064 16.6747C21.6064 16.3159 21.5552 15.9628 21.4527 15.6211C21.931 14.989 22.1959 14.2145 22.1959 13.4087C22.1902 13.0499 22.1389 12.6939 22.0364 12.3523ZM2.05016 21.4157V13.3289H4.3566V21.4157H2.05016ZM20.1713 11.3642L19.5477 11.9052L19.9435 12.6285C20.0739 12.8667 20.1415 13.1342 20.14 13.4058C20.14 13.8756 19.935 14.3227 19.5819 14.6302L18.9583 15.1712L19.3541 15.8945C19.4845 16.1327 19.5521 16.4002 19.5506 16.6718C19.5506 17.1417 19.3456 17.5887 18.9925 17.8962L18.3689 18.4372L18.7647 19.1605C18.8951 19.3987 18.9627 19.6663 18.9612 19.9378C18.9612 20.5757 18.5853 21.1509 18.0044 21.4128H6.17896V13.2378L9.01217 2.97276C9.08523 2.70965 9.24206 2.47753 9.45889 2.31157C9.67572 2.1456 9.94074 2.05484 10.2138 2.05303C10.4302 2.05303 10.6438 2.11567 10.8146 2.24381C11.0965 2.45452 11.2474 2.77344 11.2303 3.11228L10.957 8.76162H19.9094C20.4162 9.07199 20.7294 9.59592 20.7294 10.1398C20.7294 10.6096 20.5244 11.0538 20.1713 11.3642Z"
+                fill="#B51A23" />
+            </svg>
+            <span class="inline-block">Deep comfort system for close, precise conforming</span>
+          </li>
+          <li class="py-2">
+            <svg class="inline-block" width="23" height="24" viewBox="0 0 23 24" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M22.0364 12.3523C22.5148 11.7201 22.7796 10.9456 22.7796 10.1398C22.7796 8.86128 22.0649 7.65111 20.9145 6.97627C20.6184 6.80256 20.2812 6.71114 19.9378 6.71146H13.1097L13.2805 3.21194C13.3204 2.36625 13.0214 1.56327 12.4405 0.951069C12.1554 0.649319 11.8115 0.409236 11.43 0.245657C11.0485 0.0820773 10.6374 -0.00152342 10.2223 2.10146e-05C8.74166 2.10146e-05 7.43184 0.996628 7.03889 2.4232L4.59293 11.2788H0.911183C0.407185 11.2788 0 11.6859 0 12.1899V22.5547C0 23.0587 0.407185 23.4658 0.911183 23.4658H18.0329C18.2949 23.4658 18.5511 23.4146 18.7875 23.3121C20.1428 22.734 21.017 21.41 21.017 19.9407C21.017 19.5819 20.9658 19.2288 20.8633 18.8871C21.3416 18.255 21.6064 17.4805 21.6064 16.6747C21.6064 16.3159 21.5552 15.9628 21.4527 15.6211C21.931 14.989 22.1959 14.2145 22.1959 13.4087C22.1902 13.0499 22.1389 12.6939 22.0364 12.3523ZM2.05016 21.4157V13.3289H4.3566V21.4157H2.05016ZM20.1713 11.3642L19.5477 11.9052L19.9435 12.6285C20.0739 12.8667 20.1415 13.1342 20.14 13.4058C20.14 13.8756 19.935 14.3227 19.5819 14.6302L18.9583 15.1712L19.3541 15.8945C19.4845 16.1327 19.5521 16.4002 19.5506 16.6718C19.5506 17.1417 19.3456 17.5887 18.9925 17.8962L18.3689 18.4372L18.7647 19.1605C18.8951 19.3987 18.9627 19.6663 18.9612 19.9378C18.9612 20.5757 18.5853 21.1509 18.0044 21.4128H6.17896V13.2378L9.01217 2.97276C9.08523 2.70965 9.24206 2.47753 9.45889 2.31157C9.67572 2.1456 9.94074 2.05484 10.2138 2.05303C10.4302 2.05303 10.6438 2.11567 10.8146 2.24381C11.0965 2.45452 11.2474 2.77344 11.2303 3.11228L10.957 8.76162H19.9094C20.4162 9.07199 20.7294 9.59592 20.7294 10.1398C20.7294 10.6096 20.5244 11.0538 20.1713 11.3642Z"
+                fill="#B51A23" />
+            </svg>
+            <span class="inline-block">Breathable Tencel cover and cushioning pillow top</span>
+          </li>
+          <li class="py-2">
+            <svg class="inline-block" width="23" height="24" viewBox="0 0 23 24" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M22.0364 12.3523C22.5148 11.7201 22.7796 10.9456 22.7796 10.1398C22.7796 8.86128 22.0649 7.65111 20.9145 6.97627C20.6184 6.80256 20.2812 6.71114 19.9378 6.71146H13.1097L13.2805 3.21194C13.3204 2.36625 13.0214 1.56327 12.4405 0.951069C12.1554 0.649319 11.8115 0.409236 11.43 0.245657C11.0485 0.0820773 10.6374 -0.00152342 10.2223 2.10146e-05C8.74166 2.10146e-05 7.43184 0.996628 7.03889 2.4232L4.59293 11.2788H0.911183C0.407185 11.2788 0 11.6859 0 12.1899V22.5547C0 23.0587 0.407185 23.4658 0.911183 23.4658H18.0329C18.2949 23.4658 18.5511 23.4146 18.7875 23.3121C20.1428 22.734 21.017 21.41 21.017 19.9407C21.017 19.5819 20.9658 19.2288 20.8633 18.8871C21.3416 18.255 21.6064 17.4805 21.6064 16.6747C21.6064 16.3159 21.5552 15.9628 21.4527 15.6211C21.931 14.989 22.1959 14.2145 22.1959 13.4087C22.1902 13.0499 22.1389 12.6939 22.0364 12.3523ZM2.05016 21.4157V13.3289H4.3566V21.4157H2.05016ZM20.1713 11.3642L19.5477 11.9052L19.9435 12.6285C20.0739 12.8667 20.1415 13.1342 20.14 13.4058C20.14 13.8756 19.935 14.3227 19.5819 14.6302L18.9583 15.1712L19.3541 15.8945C19.4845 16.1327 19.5521 16.4002 19.5506 16.6718C19.5506 17.1417 19.3456 17.5887 18.9925 17.8962L18.3689 18.4372L18.7647 19.1605C18.8951 19.3987 18.9627 19.6663 18.9612 19.9378C18.9612 20.5757 18.5853 21.1509 18.0044 21.4128H6.17896V13.2378L9.01217 2.97276C9.08523 2.70965 9.24206 2.47753 9.45889 2.31157C9.67572 2.1456 9.94074 2.05484 10.2138 2.05303C10.4302 2.05303 10.6438 2.11567 10.8146 2.24381C11.0965 2.45452 11.2474 2.77344 11.2303 3.11228L10.957 8.76162H19.9094C20.4162 9.07199 20.7294 9.59592 20.7294 10.1398C20.7294 10.6096 20.5244 11.0538 20.1713 11.3642Z"
+                fill="#B51A23" />
+            </svg>
+            <span class="inline-block">Pocketed coils offer airflow, bounce</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="mx-4 mt-8 md:mx-56">
+    <div class="grid px-6 py-4 rounded-md md:grid-cols-3 bg-gradient-to-r from-blue-700 to-bgBlueTxt">
+      <div class="md:col-span-2">
+        <p class="text-xl text-white ">Get $200 OFF + 2 FREE Dream Pillows when you
+          spend $1,750 or more. Use Code:
+          SLEEPFOUND200
+        </p>
+      </div>
+      <div class="flex">
+        <button class="px-6 py-2 mx-auto my-auto font-bold text-white border-2 border-white rounded-md bg-bgRed">
+          <p class="uppercase">Claim your offer</p>
+        </button>
+      </div>
+    </div>
+
+    <p class="mt-8 font-thin leading-loose">Helix Sleep offers an extensive line of budget-friendly and luxury hybrids
+      designed to suit specific
+      people based
+      on
+      their body type, sleep position, and firmness preferences. The Helix Midnight Luxe offers the best balance of
+      contouring
+      and support to alleviate upper and lower back pain. Side sleepers in particular should find the mattress
+      comfortable
+      thanks to its thick memory foam comfort layers, which cushion the shoulders and hips to align the spine and reduce
+      pressure.
+      <br><br>
+      Like many competing hybrids, the Helix Midnight Luxe sleeps quite cool. A support core of pocketed coils generates
+      steady air circulation to help the mattress maintain a comfortable core temperature, while the breathable Tencel
+      cover
+      wicks away moisture from your body. The zoned coil system also reinforces the perimeter and prevents deep sinkage
+      when
+      you sleep near the edges or get in and out of bed.
+      <br><br>
+      The Midnight Luxe is priced competitively, but Helix Sleep provides free shipping to all 50 states and backs the
+      mattress with a 15-year warranty. You’ll also receive a 100-night sleep trial with your purchase. If the Midnight
+      Luxe
+      doesn’t sound soft or firm enough for your liking, keep in mind that Helix Sleep’s Luxe line includes five
+      additional
+      hybrid models with different feels and target audiences.
+    </p>
+  </div>
+
+
+
+  <!--Footer-->
+  <div class="py-12 text-white border-t-4 mt-28 border-bgRed bg-bgBlueTxt">
+    <div class="grid gap-2 mx-4 text-center md:grid-cols-5 md:mx-56">
+      <div>
+        <h1>About Us</h1>
+      </div>
+      <div>
+        <h1>Cookie Policy</h1>
+      </div>
+      <div>
+        <h1>Privacy Policy</h1>
+      </div>
+      <div>
+        <h1>Affiliate Disclosure</h1>
+      </div>
+      <div>
+        <h1>Contact us</h1>
+        <p class="mt-20 text-sm font-thin text-center md:text-left">Copyright @2021 16 Best</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
